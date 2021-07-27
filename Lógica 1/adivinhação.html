@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+ <script>
+
+  function pulaLinha(){
+
+   document.write("<br>");
+
+  }
+
+  function mostra(rogerio){
+
+    document.write(rogerio);
+    pulaLinha();
+
+  } 
+
+var n1= Math.round(Math.random()* 5)
+var tentativas= 1
+
+   while( tentativas <=3){
+   var chute=parseInt(prompt("chute um um número de 1 a 5 você têm 3 tentativas"));
+
+         if(chute==n1){
+
+         mostra("você acertou! o número era " + n1);
+break;
+         }else{
+     
+         mostra("você errou ");
+
+         }
+         if(tentativas==3){
+         mostra("suas chances acabaram o numero correto era " + n1);
+         }
+
+   tentativas++;
+   }
+
+</script>

@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<input/>
+
+<button> arrisque um palpite! </button>
+
+<script>
+     function aleatorio (roger){
+
+       return Math.round(Math.random()*(roger));
+     }
+ var n1= aleatorio(10);
+ var input= document.querySelector("input");
+ var button= document.querySelector("button");
+   
+  alert("vamos jogar um jogo?");
+  alert("vou pensar em um número de um a dez e você tem que adivinhar, vamos lá!");
+
+   input.focus();
+
+   function chute(){
+       if(input.value == n1){
+          
+         alert("você acertou o numero era "+ n1 +" vou pensar em outro!");
+         n1 = aleatorio(10);
+         input.value=""
+         input.focus();
+       }else{
+
+         alert("tente novamente!");
+       } 
+   input.value="";
+   input.focus();
+
+   }
+
+ button.onclick=chute;
+
+</script>
